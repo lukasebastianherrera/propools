@@ -144,6 +144,10 @@ textarea {
   display: none;
   width: 44px;
   height: 44px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 4px;
   padding: 0;
   border: 0;
   border-radius: 50%;
@@ -152,9 +156,10 @@ textarea {
 }
 
 .menu-toggle span {
+  display: block;
   width: 20px;
   height: 2px;
-  margin: 4px auto;
+  margin: 0;
   background: var(--white);
   border-radius: 999px;
   transition: transform 200ms ease, opacity 200ms ease, background 200ms ease;
@@ -679,7 +684,7 @@ textarea {
 
 @media (max-width: 860px) {
   .menu-toggle {
-    display: block;
+    display: flex;
   }
 
   .nav-links {
