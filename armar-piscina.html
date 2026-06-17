@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Armá tu piscina ProPools seleccionando tamaño, revestimiento, terminaciones y extras para consultar por WhatsApp."
+    />
+    <title>Armar tu piscina | ProPools</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header page-header scrolled" id="siteHeader">
+      <nav class="navbar" aria-label="Navegación principal">
+        <a class="brand" href="index.html#inicio" aria-label="ProPools inicio">
+          <span class="brand-mark"></span>
+          <span>ProPools</span>
+        </a>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Abrir menú"
+          aria-expanded="false"
+          aria-controls="mainMenu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav-links" id="mainMenu">
+          <a href="index.html#inicio">Inicio</a>
+          <a href="index.html#trabajos">Trabajos</a>
+          <a href="armar-piscina.html" aria-current="page">Armar piscina</a>
+          <a href="index.html#contacto">Contacto</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="builder-page">
+      <section class="section builder-section" aria-labelledby="builderTitle">
+        <div class="builder-heading reveal">
+          <p class="eyebrow">Configurador</p>
+          <h1 id="builderTitle">Armar tu piscina</h1>
+          <p>
+            Elegí las opciones principales y enviá la consulta por WhatsApp con el detalle ya armado.
+          </p>
+        </div>
+
+        <div class="builder-shell reveal">
+          <form class="pool-builder" id="poolBuilder" aria-label="Opciones para armar tu piscina"></form>
+
+          <aside class="builder-summary" aria-live="polite">
+            <div class="builder-summary-inner">
+              <p class="eyebrow">Resumen</p>
+              <h2>Tu piscina seleccionada</h2>
+              <div class="summary-list" id="poolSummary"></div>
+              <p class="summary-help" id="poolSummaryHelp"></p>
+              <a class="btn btn-primary whatsapp-submit" id="poolWhatsappLink" href="#" aria-disabled="true">
+                Enviar por WhatsApp
+              </a>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <a
+      class="whatsapp-float"
+      href="https://wa.me/5491132665000?text=Hola%20ProPools,%20quiero%20consultar%20por%20una%20pileta"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Consultar por WhatsApp"
+    >
+      <svg viewBox="0 0 32 32" aria-hidden="true">
+        <path
+          d="M16.01 3.2A12.73 12.73 0 0 0 5.14 22.53L3.6 28.8l6.42-1.5A12.72 12.72 0 1 0 16.01 3.2Zm0 23.14a10.39 10.39 0 0 1-5.3-1.45l-.38-.22-3.8.88.91-3.69-.25-.39a10.4 10.4 0 1 1 8.82 4.87Zm5.7-7.78c-.31-.16-1.84-.91-2.13-1.01-.28-.1-.49-.16-.7.16-.2.31-.8 1.01-.98 1.22-.18.2-.36.23-.67.08-.31-.16-1.31-.48-2.49-1.54-.92-.82-1.54-1.83-1.72-2.14-.18-.31-.02-.48.14-.64.14-.14.31-.36.47-.54.16-.18.2-.31.31-.52.1-.2.05-.39-.03-.54-.08-.16-.7-1.68-.96-2.3-.25-.6-.51-.52-.7-.53h-.6c-.2 0-.54.08-.82.39-.28.31-1.08 1.05-1.08 2.56s1.11 2.98 1.26 3.18c.16.2 2.18 3.33 5.28 4.67.74.32 1.31.51 1.76.65.74.23 1.41.2 1.94.12.59-.09 1.84-.75 2.1-1.47.26-.72.26-1.34.18-1.47-.08-.13-.28-.2-.59-.36Z"
+        />
+      </svg>
+    </a>
+
+    <footer class="site-footer">
+      <div class="site-footer-inner">
+        <div class="footer-brand-block">
+          <strong>ProPools</strong>
+          <p>Piletas modernas a medida</p>
+        </div>
+        <div class="footer-contact-block">
+          <a href="mailto:propools26@gmail.com">propools26@gmail.com</a>
+          <a href="tel:+5491132665000">+54 9 11 3266-5000</a>
+          <span>Buenos Aires, Argentina</span>
+        </div>
+        <p class="footer-copy">&copy; <span id="year"></span> ProPools. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
